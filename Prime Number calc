@@ -1,0 +1,10 @@
+#Prime number calculator
+n = int(input("Find prime numbers up to what number?: "))
+for x in range(2, n+1):
+	isPrime = True
+	for y in range(2, int(x**0.5)+1):
+		if x%y ==0:
+			isPrime = False
+			break
+	if isPrime:
+		print(x)
